@@ -1,0 +1,337 @@
+2552  execve("./fact", ["./fact", "10"], 0x7ffc011d0800 /* 18 vars */) = 0
+2552  brk(NULL)                         = 0x5bb7f8c0c000
+2552  arch_prctl(0x3001 /* ARCH_??? */, 0x7fffe51fc420) = -1 EINVAL (Invalid argument)
+2552  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x78424a879000
+2552  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2552  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2552  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+2552  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x78424a871000
+2552  close(3)                          = 0
+2552  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2552  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+2552  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+2552  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x78424a648000
+2552  mprotect(0x78424a670000, 2023424, PROT_NONE) = 0
+2552  mmap(0x78424a670000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x78424a670000
+2552  mmap(0x78424a805000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x78424a805000
+2552  mmap(0x78424a85e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x78424a85e000
+2552  mmap(0x78424a864000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x78424a864000
+2552  close(3)                          = 0
+2552  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x78424a645000
+2552  arch_prctl(ARCH_SET_FS, 0x78424a645740) = 0
+2552  set_tid_address(0x78424a645a10)   = 2552
+2552  set_robust_list(0x78424a645a20, 24) = 0
+2552  rseq(0x78424a6460e0, 0x20, 0, 0x53053053) = 0
+2552  mprotect(0x78424a85e000, 16384, PROT_READ) = 0
+2552  mprotect(0x5bb7d49a1000, 4096, PROT_READ) = 0
+2552  mprotect(0x78424a8b3000, 8192, PROT_READ) = 0
+2552  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2552  munmap(0x78424a871000, 29392)     = 0
+2552  execve("./fact", ["./fact", "9", "10"], 0x7fffe51fc600 /* 18 vars */) = 0
+2552  brk(NULL)                         = 0x5adde386c000
+2552  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe62cd4cb0) = -1 EINVAL (Invalid argument)
+2552  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x720036615000
+2552  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2552  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2552  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+2552  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x72003660d000
+2552  close(3)                          = 0
+2552  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2552  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+2552  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+2552  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7200363e4000
+2552  mprotect(0x72003640c000, 2023424, PROT_NONE) = 0
+2552  mmap(0x72003640c000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x72003640c000
+2552  mmap(0x7200365a1000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7200365a1000
+2552  mmap(0x7200365fa000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7200365fa000
+2552  mmap(0x720036600000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x720036600000
+2552  close(3)                          = 0
+2552  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7200363e1000
+2552  arch_prctl(ARCH_SET_FS, 0x7200363e1740) = 0
+2552  set_tid_address(0x7200363e1a10)   = 2552
+2552  set_robust_list(0x7200363e1a20, 24) = 0
+2552  rseq(0x7200363e20e0, 0x20, 0, 0x53053053) = 0
+2552  mprotect(0x7200365fa000, 16384, PROT_READ) = 0
+2552  mprotect(0x5addd5be9000, 4096, PROT_READ) = 0
+2552  mprotect(0x72003664f000, 8192, PROT_READ) = 0
+2552  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2552  munmap(0x72003660d000, 29392)     = 0
+2552  execve("./fact", ["./fact", "8", "90"], 0x7ffe62cd4e98 /* 18 vars */) = 0
+2552  brk(NULL)                         = 0x5de216893000
+2552  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc4a0a0300) = -1 EINVAL (Invalid argument)
+2552  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x711f7fdd4000
+2552  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2552  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2552  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+2552  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x711f7fdcc000
+2552  close(3)                          = 0
+2552  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2552  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+2552  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+2552  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x711f7fba3000
+2552  mprotect(0x711f7fbcb000, 2023424, PROT_NONE) = 0
+2552  mmap(0x711f7fbcb000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x711f7fbcb000
+2552  mmap(0x711f7fd60000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x711f7fd60000
+2552  mmap(0x711f7fdb9000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x711f7fdb9000
+2552  mmap(0x711f7fdbf000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x711f7fdbf000
+2552  close(3)                          = 0
+2552  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x711f7fba0000
+2552  arch_prctl(ARCH_SET_FS, 0x711f7fba0740) = 0
+2552  set_tid_address(0x711f7fba0a10)   = 2552
+2552  set_robust_list(0x711f7fba0a20, 24) = 0
+2552  rseq(0x711f7fba10e0, 0x20, 0, 0x53053053) = 0
+2552  mprotect(0x711f7fdb9000, 16384, PROT_READ) = 0
+2552  mprotect(0x5de2133c8000, 4096, PROT_READ) = 0
+2552  mprotect(0x711f7fe0e000, 8192, PROT_READ) = 0
+2552  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2552  munmap(0x711f7fdcc000, 29392)     = 0
+2552  execve("./fact", ["./fact", "7", "720"], 0x7ffc4a0a04e8 /* 18 vars */) = 0
+2552  brk(NULL)                         = 0x639de5dd6000
+2552  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd90bdb750) = -1 EINVAL (Invalid argument)
+2552  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7082be48e000
+2552  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2552  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2552  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+2552  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7082be486000
+2552  close(3)                          = 0
+2552  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2552  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+2552  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+2552  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7082be25d000
+2552  mprotect(0x7082be285000, 2023424, PROT_NONE) = 0
+2552  mmap(0x7082be285000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7082be285000
+2552  mmap(0x7082be41a000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7082be41a000
+2552  mmap(0x7082be473000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7082be473000
+2552  mmap(0x7082be479000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7082be479000
+2552  close(3)                          = 0
+2552  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7082be25a000
+2552  arch_prctl(ARCH_SET_FS, 0x7082be25a740) = 0
+2552  set_tid_address(0x7082be25aa10)   = 2552
+2552  set_robust_list(0x7082be25aa20, 24) = 0
+2552  rseq(0x7082be25b0e0, 0x20, 0, 0x53053053) = 0
+2552  mprotect(0x7082be473000, 16384, PROT_READ) = 0
+2552  mprotect(0x639dd2271000, 4096, PROT_READ) = 0
+2552  mprotect(0x7082be4c8000, 8192, PROT_READ) = 0
+2552  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2552  munmap(0x7082be486000, 29392)     = 0
+2552  execve("./fact", ["./fact", "6", "5040"], 0x7ffd90bdb938 /* 18 vars */) = 0
+2552  brk(NULL)                         = 0x55f496f47000
+2552  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffff96f7380) = -1 EINVAL (Invalid argument)
+2552  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7d1f302c2000
+2552  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2552  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2552  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+2552  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7d1f302ba000
+2552  close(3)                          = 0
+2552  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2552  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+2552  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+2552  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7d1f30091000
+2552  mprotect(0x7d1f300b9000, 2023424, PROT_NONE) = 0
+2552  mmap(0x7d1f300b9000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7d1f300b9000
+2552  mmap(0x7d1f3024e000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7d1f3024e000
+2552  mmap(0x7d1f302a7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7d1f302a7000
+2552  mmap(0x7d1f302ad000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7d1f302ad000
+2552  close(3)                          = 0
+2552  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7d1f3008e000
+2552  arch_prctl(ARCH_SET_FS, 0x7d1f3008e740) = 0
+2552  set_tid_address(0x7d1f3008ea10)   = 2552
+2552  set_robust_list(0x7d1f3008ea20, 24) = 0
+2552  rseq(0x7d1f3008f0e0, 0x20, 0, 0x53053053) = 0
+2552  mprotect(0x7d1f302a7000, 16384, PROT_READ) = 0
+2552  mprotect(0x55f46ee25000, 4096, PROT_READ) = 0
+2552  mprotect(0x7d1f302fc000, 8192, PROT_READ) = 0
+2552  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2552  munmap(0x7d1f302ba000, 29392)     = 0
+2552  execve("./fact", ["./fact", "5", "30240"], 0x7ffff96f7568 /* 18 vars */) = 0
+2552  brk(NULL)                         = 0x5f61cd36c000
+2552  arch_prctl(0x3001 /* ARCH_??? */, 0x7fffadffc070) = -1 EINVAL (Invalid argument)
+2552  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x781b10791000
+2552  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2552  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2552  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+2552  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x781b10789000
+2552  close(3)                          = 0
+2552  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2552  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+2552  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+2552  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x781b10560000
+2552  mprotect(0x781b10588000, 2023424, PROT_NONE) = 0
+2552  mmap(0x781b10588000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x781b10588000
+2552  mmap(0x781b1071d000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x781b1071d000
+2552  mmap(0x781b10776000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x781b10776000
+2552  mmap(0x781b1077c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x781b1077c000
+2552  close(3)                          = 0
+2552  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x781b1055d000
+2552  arch_prctl(ARCH_SET_FS, 0x781b1055d740) = 0
+2552  set_tid_address(0x781b1055da10)   = 2552
+2552  set_robust_list(0x781b1055da20, 24) = 0
+2552  rseq(0x781b1055e0e0, 0x20, 0, 0x53053053) = 0
+2552  mprotect(0x781b10776000, 16384, PROT_READ) = 0
+2552  mprotect(0x5f61c430f000, 4096, PROT_READ) = 0
+2552  mprotect(0x781b107cb000, 8192, PROT_READ) = 0
+2552  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2552  munmap(0x781b10789000, 29392)     = 0
+2552  execve("./fact", ["./fact", "4", "151200"], 0x7fffadffc258 /* 18 vars */) = 0
+2552  brk(NULL)                         = 0x6226a8389000
+2552  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffff13bb130) = -1 EINVAL (Invalid argument)
+2552  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7a578445e000
+2552  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2552  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2552  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+2552  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7a5784456000
+2552  close(3)                          = 0
+2552  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2552  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+2552  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+2552  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7a578422d000
+2552  mprotect(0x7a5784255000, 2023424, PROT_NONE) = 0
+2552  mmap(0x7a5784255000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7a5784255000
+2552  mmap(0x7a57843ea000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7a57843ea000
+2552  mmap(0x7a5784443000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7a5784443000
+2552  mmap(0x7a5784449000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7a5784449000
+2552  close(3)                          = 0
+2552  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7a578422a000
+2552  arch_prctl(ARCH_SET_FS, 0x7a578422a740) = 0
+2552  set_tid_address(0x7a578422aa10)   = 2552
+2552  set_robust_list(0x7a578422aa20, 24) = 0
+2552  rseq(0x7a578422b0e0, 0x20, 0, 0x53053053) = 0
+2552  mprotect(0x7a5784443000, 16384, PROT_READ) = 0
+2552  mprotect(0x62269845d000, 4096, PROT_READ) = 0
+2552  mprotect(0x7a5784498000, 8192, PROT_READ) = 0
+2552  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2552  munmap(0x7a5784456000, 29392)     = 0
+2552  execve("./fact", ["./fact", "3", "604800"], 0x7ffff13bb318 /* 18 vars */) = 0
+2552  brk(NULL)                         = 0x5ba4abaa4000
+2552  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc75dbb7c0) = -1 EINVAL (Invalid argument)
+2552  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x761492d71000
+2552  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2552  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2552  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+2552  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x761492d69000
+2552  close(3)                          = 0
+2552  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2552  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+2552  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+2552  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x761492b40000
+2552  mprotect(0x761492b68000, 2023424, PROT_NONE) = 0
+2552  mmap(0x761492b68000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x761492b68000
+2552  mmap(0x761492cfd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x761492cfd000
+2552  mmap(0x761492d56000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x761492d56000
+2552  mmap(0x761492d5c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x761492d5c000
+2552  close(3)                          = 0
+2552  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x761492b3d000
+2552  arch_prctl(ARCH_SET_FS, 0x761492b3d740) = 0
+2552  set_tid_address(0x761492b3da10)   = 2552
+2552  set_robust_list(0x761492b3da20, 24) = 0
+2552  rseq(0x761492b3e0e0, 0x20, 0, 0x53053053) = 0
+2552  mprotect(0x761492d56000, 16384, PROT_READ) = 0
+2552  mprotect(0x5ba49fafa000, 4096, PROT_READ) = 0
+2552  mprotect(0x761492dab000, 8192, PROT_READ) = 0
+2552  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2552  munmap(0x761492d69000, 29392)     = 0
+2552  execve("./fact", ["./fact", "2", "1814400"], 0x7ffc75dbb9a8 /* 18 vars */) = 0
+2552  brk(NULL)                         = 0x638bfd1d0000
+2552  arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd43024b40) = -1 EINVAL (Invalid argument)
+2552  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7de5f9e81000
+2552  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2552  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2552  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+2552  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7de5f9e79000
+2552  close(3)                          = 0
+2552  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2552  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+2552  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+2552  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7de5f9c50000
+2552  mprotect(0x7de5f9c78000, 2023424, PROT_NONE) = 0
+2552  mmap(0x7de5f9c78000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7de5f9c78000
+2552  mmap(0x7de5f9e0d000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7de5f9e0d000
+2552  mmap(0x7de5f9e66000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x7de5f9e66000
+2552  mmap(0x7de5f9e6c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7de5f9e6c000
+2552  close(3)                          = 0
+2552  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7de5f9c4d000
+2552  arch_prctl(ARCH_SET_FS, 0x7de5f9c4d740) = 0
+2552  set_tid_address(0x7de5f9c4da10)   = 2552
+2552  set_robust_list(0x7de5f9c4da20, 24) = 0
+2552  rseq(0x7de5f9c4e0e0, 0x20, 0, 0x53053053) = 0
+2552  mprotect(0x7de5f9e66000, 16384, PROT_READ) = 0
+2552  mprotect(0x638bd548c000, 4096, PROT_READ) = 0
+2552  mprotect(0x7de5f9ebb000, 8192, PROT_READ) = 0
+2552  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2552  munmap(0x7de5f9e79000, 29392)     = 0
+2552  execve("./fact", ["./fact", "1", "3628800"], 0x7ffd43024d28 /* 18 vars */) = 0
+2552  brk(NULL)                         = 0x5d34a0395000
+2552  arch_prctl(0x3001 /* ARCH_??? */, 0x7fff19c9df90) = -1 EINVAL (Invalid argument)
+2552  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x772299988000
+2552  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2552  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2552  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+2552  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x772299980000
+2552  close(3)                          = 0
+2552  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2552  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+2552  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+2552  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+2552  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2552  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x772299757000
+2552  mprotect(0x77229977f000, 2023424, PROT_NONE) = 0
+2552  mmap(0x77229977f000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x77229977f000
+2552  mmap(0x772299914000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x772299914000
+2552  mmap(0x77229996d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x77229996d000
+2552  mmap(0x772299973000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x772299973000
+2552  close(3)                          = 0
+2552  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x772299754000
+2552  arch_prctl(ARCH_SET_FS, 0x772299754740) = 0
+2552  set_tid_address(0x772299754a10)   = 2552
+2552  set_robust_list(0x772299754a20, 24) = 0
+2552  rseq(0x7722997550e0, 0x20, 0, 0x53053053) = 0
+2552  mprotect(0x77229996d000, 16384, PROT_READ) = 0
+2552  mprotect(0x5d3492d3b000, 4096, PROT_READ) = 0
+2552  mprotect(0x7722999c2000, 8192, PROT_READ) = 0
+2552  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2552  munmap(0x772299980000, 29392)     = 0
+2552  newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+2552  getrandom("\xd5\xe5\xb9\x69\xf9\x18\x8f\xbb", 8, GRND_NONBLOCK) = 8
+2552  brk(NULL)                         = 0x5d34a0395000
+2552  brk(0x5d34a03b6000)               = 0x5d34a03b6000
+2552  write(1, "3628800", 7)            = 7
+2552  exit_group(0)                     = ?
+2552  +++ exited with 0 +++

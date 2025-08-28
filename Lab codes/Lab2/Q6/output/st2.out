@@ -1,0 +1,99 @@
+2708  execve("./cprime", ["./cprime", "500000", "4", "2"], 0x7fff8f6591a0 /* 18 vars */) = 0
+2708  brk(NULL)                         = 0x5b9a838c5000
+2708  arch_prctl(0x3001 /* ARCH_??? */, 0x7fffe3343980) = -1 EINVAL (Invalid argument)
+2708  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x74a14d12f000
+2708  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+2708  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+2708  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=29392, ...}, AT_EMPTY_PATH) = 0
+2708  mmap(NULL, 29392, PROT_READ, MAP_PRIVATE, 3, 0) = 0x74a14d127000
+2708  close(3)                          = 0
+2708  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+2708  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+2708  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=940560, ...}, AT_EMPTY_PATH) = 0
+2708  mmap(NULL, 942344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x74a14d040000
+2708  mmap(0x74a14d04e000, 507904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x74a14d04e000
+2708  mmap(0x74a14d0ca000, 372736, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8a000) = 0x74a14d0ca000
+2708  mmap(0x74a14d125000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe4000) = 0x74a14d125000
+2708  close(3)                          = 0
+2708  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+2708  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+2708  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2708  pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+2708  pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\325\31p\226\367\t\200\30)\261\30\257\33|\366c"..., 68, 896) = 68
+2708  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+2708  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+2708  mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x74a14ce17000
+2708  mprotect(0x74a14ce3f000, 2023424, PROT_NONE) = 0
+2708  mmap(0x74a14ce3f000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x74a14ce3f000
+2708  mmap(0x74a14cfd4000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x74a14cfd4000
+2708  mmap(0x74a14d02d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x74a14d02d000
+2708  mmap(0x74a14d033000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x74a14d033000
+2708  close(3)                          = 0
+2708  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x74a14ce14000
+2708  arch_prctl(ARCH_SET_FS, 0x74a14ce14740) = 0
+2708  set_tid_address(0x74a14ce14a10)   = 2708
+2708  set_robust_list(0x74a14ce14a20, 24) = 0
+2708  rseq(0x74a14ce150e0, 0x20, 0, 0x53053053) = 0
+2708  mprotect(0x74a14d02d000, 16384, PROT_READ) = 0
+2708  mprotect(0x74a14d125000, 4096, PROT_READ) = 0
+2708  mprotect(0x5b9a58210000, 4096, PROT_READ) = 0
+2708  mprotect(0x74a14d169000, 8192, PROT_READ) = 0
+2708  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+2708  munmap(0x74a14d127000, 29392)     = 0
+2708  getrandom("\x15\x90\xf2\x2a\xd8\xd8\x0e\x82", 8, GRND_NONBLOCK) = 8
+2708  brk(NULL)                         = 0x5b9a838c5000
+2708  brk(0x5b9a838e6000)               = 0x5b9a838e6000
+2708  pipe([3, 4])                      = 0
+2708  pipe([5, 6])                      = 0
+2708  pipe([7, 8])                      = 0
+2708  pipe([9, 10])                     = 0
+2708  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x74a14ce14a10) = 2709
+2708  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+2709  set_robust_list(0x74a14ce14a20, 24) = 0
+2708  <... clone resumed>, child_tidptr=0x74a14ce14a10) = 2710
+2708  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+2710  set_robust_list(0x74a14ce14a20, 24 <unfinished ...>
+2708  <... clone resumed>, child_tidptr=0x74a14ce14a10) = 2711
+2708  clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD <unfinished ...>
+2711  set_robust_list(0x74a14ce14a20, 24 <unfinished ...>
+2710  <... set_robust_list resumed>)    = 0
+2708  <... clone resumed>, child_tidptr=0x74a14ce14a10) = 2712
+2708  read(3,  <unfinished ...>
+2711  <... set_robust_list resumed>)    = 0
+2712  set_robust_list(0x74a14ce14a20, 24) = 0
+2709  write(4, "\326-\0\0\0\0\0\0", 8 <unfinished ...>
+2708  <... read resumed>"\326-\0\0\0\0\0\0", 8) = 8
+2709  <... write resumed>)              = 8
+2708  read(5,  <unfinished ...>
+2709  exit_group(11734)                 = ?
+2709  +++ exited with 214 +++
+2708  <... read resumed>0x7fffe3343998, 8) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+2708  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2709, si_uid=1000, si_status=214, si_utime=2, si_stime=0} ---
+2708  read(5,  <unfinished ...>
+2710  write(6, "F(\0\0\0\0\0\0", 8)     = 8
+2708  <... read resumed>"F(\0\0\0\0\0\0", 8) = 8
+2708  read(7,  <unfinished ...>
+2710  exit_group(10310)                 = ?
+2710  +++ exited with 70 +++
+2708  <... read resumed>0x7fffe3343998, 8) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+2708  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2710, si_uid=1000, si_status=70, si_utime=4, si_stime=0} ---
+2708  read(7,  <unfinished ...>
+2711  write(8, "\204&\0\0\0\0\0\0", 8 <unfinished ...>
+2708  <... read resumed>"\204&\0\0\0\0\0\0", 8) = 8
+2711  <... write resumed>)              = 8
+2708  read(9,  <unfinished ...>
+2711  exit_group(9860)                  = ?
+2711  +++ exited with 132 +++
+2708  <... read resumed>0x7fffe3343998, 8) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+2708  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2711, si_uid=1000, si_status=132, si_utime=5, si_stime=0} ---
+2708  read(9,  <unfinished ...>
+2712  write(10, "\242%\0\0\0\0\0\0", 8 <unfinished ...>
+2708  <... read resumed>"\242%\0\0\0\0\0\0", 8) = 8
+2712  <... write resumed>)              = 8
+2712  exit_group(9634)                  = ?
+2712  +++ exited with 162 +++
+2708  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2712, si_uid=1000, si_status=162, si_utime=5, si_stime=0} ---
+2708  newfstatat(1, "", {st_mode=S_IFREG|0664, st_size=91, ...}, AT_EMPTY_PATH) = 0
+2708  write(1, "Testcase: 2 numP: 4 Expected: 41"..., 90) = 90
+2708  exit_group(0)                     = ?
+2708  +++ exited with 0 +++
