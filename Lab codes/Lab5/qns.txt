@@ -1,0 +1,25 @@
+Part1
+------
+
+Q1. Observe the PCB address of the processes for the provided test case #1. Compare that to any of the addresses in the user space and note down the differences.
+Ans: The address we get 0x20862C0 as PCB address and 0x7FFFFFB98 for user address. 0x7FFFFF is standard starting address for user space addresses. PCB's addresses is of kernal.
+
+Q2. Observe the output for the provided testcase#3 and match the child-parent relationship with the code logic.
+Ans: Order of adresses: Parent(pid=1)<child1(pid=2)<child2(pid=3)
+Part 2
+------
+Q1. Observe the output for the provided testcase #4. How many FDs correspond to pipes and what are their access permissions?
+Ans : 2 FDs correspond to one pipe. One of them has only read permission and one of them has only write permission.
+Part 3
+-----
+
+Q1. Observe the stack segment information for testcase#2 and reason about it.
+Ans :The stack is expanding 2 pages(8192)  which is reflecting in the adresses in the output. Stack is statically allocated. So, if we access adress inside it, it will not give fault.The F in address is changed to D. Although, if we donot write in the stack, the expected expansion will not take place. Hence, derefrencing the pointer (*ptr = 'a') is necessary for it to expand.
+
+Part 4
+------
+
+Q1. Why is the number of VM areas less than the number of mmap calls for testcase#4? 
+Ans: Because all the four permissions were same in this testcase which is resulting in joined VM areas.
+Q2. Why it is not so for testcase #3.
+ans: Here, the permissions are different, so no lumping of VM is happenening and every time new VM area is being created.

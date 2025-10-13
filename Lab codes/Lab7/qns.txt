@@ -1,0 +1,18 @@
+Part 1
+------
+Q1. Briefly explain your implementation logic to handle wrap-around in the trace buffer.
+ In the tb_info struct we have a trace buffer array (4KB) , read pointer, write pointer and a flag variable . In write syscall we first check if the number of bytes to be written (count) are more than the available bytes or not. We modify the count such that number of bytes to be written<= available space . Next we simply start from the write pointer and keep incrementing , once we reach end of buffer we take a modulo with 4096 .Similarly for read syscall , we start from the read pointer and keep incrementing unless we reach the write pointer or "count" bytes are read (similarly we take mod 4096 once we reach the end of buffer) . The flag varible is used to determine that  we have reached the write pointer or not because for every written byte we increment the flag variable and for every read byte we decrement the flag variable . flag=0 indicates that we have reached the write pointer and we stop reading there . 
+Q2. Can a write to trace buffer return 0 even if we pass non-zero size to the system call? Why or Why not?
+   Yes it can return 0 if the trace buffer is already full i.e the flag variable is equal to 4096.
+Q3. Explain the expected behavior of testcase9.c.  
+	The create_trace_buffer syscall allocates the lowest free file descriptor and returns the allocated file descriptor. In case no free file descriptor is available it returns -EINVAL. fd 0,1,2 are already open and fd[0]=3, fd[1]=4, and so on are assigned to the fd array . We have MAX_OPEN_FILES =32, so maximum fd that can be assigned is 31 and fd[28]=31 . So for fd[29] no file descriptor is available and it should return -EINVAL .
+after that fd=3 is closed and is now free , So when create_trace_buffer is called again fd2 should be assigned 3 since it is the lowest free file descriptor. 
+
+Part 2
+------
+Q1. In testcase13.c, what address `caddr' represent? How it is formulated in the user space?
+      caddr lies in the code segment and represents the address of code segment .In the testcase, the function is called and the address of variable var lies in the locals for func i.e  above the rbp . We increment 16 to the address so it points to the memory containing the  return address of func called . Now it is dereferenced , i.e the value stored in the return address of func called is points to the next line in the main function , which will be in the code segment . 
+
+Q2. How do you explain the invocation of tb_read() and tb_write() when a read/write syscall is performed?   
+  We pointed the fops->read to the tb_read function and fops->write to the tb_write function , so here when we call read/write syscall ,it redirects to the tb_read or tb_write function instead of executing the inbuilt read /write syscall . Had it been some other file not using trace buffer , the inbuilt read/write syscall will have been implemented . 
+         
